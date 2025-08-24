@@ -26,7 +26,7 @@ function buildICSEvent(
   const startDate = new Date(
     `${startYear}-${startMonth}-${parseInt(startDay) + 1}`
   );
-  // used to offset the days from the start date of the class. otherwise, every class will appear on the start date in iCloud maps.
+  // used to offset the days from the start date of the class. otherwise, every class will appear on the start date in iCloud calendar.
   const indexes = {
     SU: 0,
     MO: 1,
