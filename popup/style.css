@@ -1,0 +1,86 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(255, 221, 0);
+}
+
+h1,
+h2,
+.message {
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.message {
+  margin-top: 18px;
+  display: none;
+  color: white;
+  font-size: 16px;
+  border-left: solid rgb(255, 254, 245) 4px;
+  background-color: rgb(255, 229, 58);
+  padding: 10px;
+}
+
+.message.show {
+  display: block;
+}
+
+.message.error {
+  color: rgb(255, 0, 47);
+  border-left: solid rgb(255, 0, 0) 4px;
+  background-color: rgb(255, 164, 79);
+}
+.message.alert {
+  color: rgb(34, 33, 32);
+  border-left: solid rgb(255, 149, 0) 4px;
+  background-color: rgb(255, 184, 84);
+}
+.message.success {
+  color: rgb(40, 40, 40);
+  border-left: solid rgb(0, 255, 0) 4px;
+  background-color: rgb(147, 255, 148);
+}
+
+.imagecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+#rightarrow {
+  width: 60px;
+  height: 60px;
+}
+
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px;
+  border: black solid 2px;
+  margin-bottom: 10px;
+}
+
+button:not(:disabled):hover {
+  background-color: rgb(97, 97, 255);
+}
+
+button:not(:disabled):active {
+  background-color: rgb(34, 34, 244);
+}
