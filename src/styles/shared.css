@@ -558,19 +558,19 @@ select {
     border-radius: 5px;
 }
 
-.classDetails div {
+.classDetail {
     margin-bottom: 5px;
 }
 
-.classDetails div span {
+.classDetail span {
     display: block;
 }
 
-.classDetails div:not(:nth-child(1)) {
+.classDetail:not(:nth-child(1)) {
     margin-top: 10px
 }
 
-.classDetails div b {
+.classDetail b {
     display: inline-block;
     width: 300px;
 }
@@ -604,7 +604,7 @@ input[type="file"] {
 
 .classes .groupNameContainer {
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .classes hr {
@@ -620,12 +620,15 @@ input[type="file"] {
     width: 92%;
 }
 
-.classGroup h2 {
+.classGroup h2,
+.classGroup .groupNameContainer label {
+    font-weight: bold;
     font-size: 19px;
 }
 
+
 .schedule .classGroup:not(:first-of-type) .groupNameContainer {
-    margin-top: 4px;
+    margin-top: 15px;
 }
 
 .groupNameContainer {

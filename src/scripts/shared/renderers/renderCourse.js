@@ -224,6 +224,8 @@ export function renderCourse(schedule, course, excludeAsyncByDefault = true) {
         const keySpan = document.createElement('span');
         const b = document.createElement('b');
 
+        div.classList.add("classDetail");
+
         if (!value) continue;
 
         if (key === "waitlisted") {
@@ -239,10 +241,10 @@ export function renderCourse(schedule, course, excludeAsyncByDefault = true) {
             const li3 = document.createElement('li');
             const li4 = document.createElement('li');
 
-            li.textContent = "Asynchronous";
-            li2.textContent = "Unfinalized (aka TBA)";
-            li3.textContent = "Research-based";
-            li4.textContent = "Or something else."
+            li.textContent = "asynchronous";
+            li2.textContent = "unfinalized (aka TBA)";
+            li3.textContent = "research-based";
+            li4.textContent = "or something else."
 
             list.append(li, li2, li3, li4);
             div.append(

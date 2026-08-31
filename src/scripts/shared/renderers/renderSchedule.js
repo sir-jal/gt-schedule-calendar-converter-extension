@@ -44,17 +44,19 @@ export async function renderSchedule(schedule, excludeAsyncByDefault = true) {
         //     continue;
         // }
         const classGroup = document.createElement('div');
-        const h2 = document.createElement('h2');
+        const label = document.createElement('label');
         const categoryCheckbox = document.createElement("input");
         const groupNameContainer = document.createElement("div");
         const hr = document.createElement('hr');
 
         categoryCheckbox.type = "checkbox";
         categoryCheckbox.checked = !courses.every(e => !e.getSetting("includecourse"));
-        h2.textContent = category;
+        categoryCheckbox.id = `${Settings.convertSettingToId(category)}_${schedule.id}`;
+        label.textContent = category;
+        label.htmlFor = categoryCheckbox.id;
 
         groupNameContainer.classList.add("groupNameContainer");
-        groupNameContainer.append(h2, categoryCheckbox);
+        groupNameContainer.append(label, categoryCheckbox);
 
         if (entries.length !== 1) classGroup.append(groupNameContainer);
         classGroup.classList.add("classGroup");
